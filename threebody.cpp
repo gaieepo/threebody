@@ -58,6 +58,10 @@ int main()
           dx2 = 0, dy2 = 0,
           dx3 = 0, dy3 = 0;
 
+    sPlanet1.setPosition(x1, y1);
+    sPlanet2.setPosition(x2, y2);
+    sPlanet3.setPosition(x3, y3);
+
     gf gf12, gf13, gf23;
     gf12.x = 0;
     gf12.y = 0;
@@ -103,10 +107,13 @@ int main()
         x1 += dx1; y1 += dy1;
         x2 += dx2; y2 += dy2;
         x3 += dx3; y3 += dy3;
-
         sPlanet1.setPosition(x1, y1);
         sPlanet2.setPosition(x2, y2);
         sPlanet3.setPosition(x3, y3);
+
+        // sPlanet1.move(dx1, dy1);
+        // sPlanet2.move(dx2, dy2);
+        // sPlanet3.move(dx3, dy3);
 
         app.clear();
         app.draw(sPlanet1);
